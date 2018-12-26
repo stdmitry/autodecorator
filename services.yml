@@ -1,0 +1,17 @@
+services:
+    my_service:
+        class: Service\Service
+        public: true
+        tags:
+            - { name: decorators, logic: hello_maks, id: maks,  priority: 10 }
+            - { name: decorators, logic: hello_paralaks, id: paralaks, priority: 20 }
+
+    hello_maks:
+        class: Decorator\HelloDecoration
+        arguments:
+            - 'Maks'
+
+    hello_paralaks:
+        class: Decorator\HelloDecoration
+        arguments:
+            - 'Paralaks'

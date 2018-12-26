@@ -1,0 +1,21 @@
+{
+    "name": "stdmitry/proxy",
+    "require": {
+        "ocramius/proxy-manager": "^2.2",
+        "symfony/dependency-injection": "^4.2",
+        "symfony/yaml": "^4.2",
+        "symfony/config": "^4.2",
+        "symfony/proxy-manager-bridge": "^4.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Dmitry Stepanov",
+            "email": "stdmitry@gmail.com"
+        }
+    ]
+}
